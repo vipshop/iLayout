@@ -74,6 +74,7 @@
 		2679AEF1BC8618975E292BB2 /* VSVerticalLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSVerticalLayoutView.h; sourceTree = "<group>"; };
 		2679AF57BE5F6007EECA0E40 /* VSVerticalLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSVerticalLayout.h; sourceTree = "<group>"; };
 		2679AFABDDC8C256577670F6 /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
+		CA9E0B5E192348D900AD825A /* VSLayoutContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSLayoutContainer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +132,7 @@
 				2679A226DA26FE36723B1766 /* VSHorizontalScrollView.h */,
 				2679A96510E80503B40901BC /* UIView+Layout.m */,
 				2679AFABDDC8C256577670F6 /* UIView+Layout.h */,
+				CA9E0B5E192348D900AD825A /* VSLayoutContainer.h */,
 			);
 			name = LayoutView;
 			sourceTree = "<group>";

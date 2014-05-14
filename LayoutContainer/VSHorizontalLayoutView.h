@@ -6,5 +6,5 @@
 #import <Foundation/Foundation.h>
 
 //TODO:参照VSVerticalLayoutScrollView
-@interface VSVerticalLayoutScrollView : NSObject
+@interface VSHorizontalLayoutView : NSObject
 @end
