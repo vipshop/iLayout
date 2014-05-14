@@ -3,10 +3,10 @@
 // Copyright (c) 2014 Vipshop Holdings Limited. All rights reserved.
 //
 
-#import "VSHorizontalScrollView.h"
+#import "VSHorizontalLayoutScrollView.h"
 
 
-@implementation VSHorizontalScrollView {
+@implementation VSHorizontalLayoutScrollView {
 
 }
 @end
