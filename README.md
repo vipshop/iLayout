@@ -2,4 +2,4 @@ iLayout
 =======
 
 Layout Container for iOS    
-![demo gif](https://github.com/vipshop/iLayout/blob/master/iLayoutDemo.gif)
+![demo gif](https://raw.githubusercontent.com/vipshop/iLayout/master/iLayoutDemo.gif)
