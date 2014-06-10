@@ -3,8 +3,14 @@
 // Copyright (c) 2014 Vipshop Holdings Limited. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-//TODO:参照VSVerticalLayoutView
-@interface VSHorizontalLayoutScrollView : NSObject
+@interface VSHorizontalLayoutScrollView : UIScrollView
+
+//添加子View用于排版
+-(void)addSubviewForLayout:(UIView*)subview;
+
+//更新布局
+-(void)updateLayout;
+
 @end
