@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21377D2E194706C10004D12F /* VSGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21377D2D194706C10004D12F /* VSGridCell.m */; };
 		2679A036023C864FBF50A1F0 /* VSGridLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2679A47A3FE8275D4703D6AB /* VSGridLayoutView.m */; };
 		2679A176CE408D83A6AC1ACF /* LayoutContainerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2679A984D897F2FE670112BE /* LayoutContainerTests.m */; };
 		2679A3E72B6841F5A317431D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2679AC1065ABAB2EB9819911 /* InfoPlist.strings */; };
@@ -43,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21377D2C194706C10004D12F /* VSGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSGridCell.h; sourceTree = "<group>"; };
+		21377D2D194706C10004D12F /* VSGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSGridCell.m; sourceTree = "<group>"; };
 		2679A02EBC1DEB7386F6D789 /* LayoutContainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayoutContainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2679A0942FA49E3242FD855B /* LayoutContainer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "LayoutContainer-Info.plist"; sourceTree = "<group>"; };
 		2679A0BE5946F9D197C49B3B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -143,6 +146,8 @@
 				2679A3179796DA292163EAA8 /* VSGridLayoutView.h */,
 				2679A3DC8F4BF96B126088C8 /* VSGridLayoutScrollView.m */,
 				2679A5839EA95F7D37FC5A56 /* VSGridLayoutScrollView.h */,
+				21377D2C194706C10004D12F /* VSGridCell.h */,
+				21377D2D194706C10004D12F /* VSGridCell.m */,
 			);
 			name = LayoutView;
 			sourceTree = "<group>";
@@ -311,6 +316,7 @@
 				2679ABC8F08AB39BF3C6FEAB /* VSVerticalLayoutScrollView.m in Sources */,
 				2679A8D73215F19B04626352 /* VSVerticalLayoutView.m in Sources */,
 				2679AD9BF0E8F57D35B64C15 /* VSVerticalLayout.mm in Sources */,
+				21377D2E194706C10004D12F /* VSGridCell.m in Sources */,
 				287E1D8F1946BA400033705B /* VSHorizontalLayout.mm in Sources */,
 				2679AD50FDC98073034F18B4 /* VSHorizontalLayoutView.m in Sources */,
 				2679A90FDF680FA4A2062281 /* VSHorizontalLayoutScrollView.m in Sources */,
