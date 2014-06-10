@@ -43,6 +43,9 @@
 }
 
 - (void)updateLayout {
+    if ([self.delegate respondsToSelector:@selector(layoutViewWillChange:)]) {
+        [self.delegate layoutViewWillChange:self];
+    }
     UIView *prevView = nil;
     CGFloat contentHeight = 0;
     std::vector<UIView *>::iterator it;

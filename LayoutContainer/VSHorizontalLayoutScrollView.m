@@ -48,4 +48,7 @@
     self.contentSize = CGSizeMake(self.contentSize.width, HorizontalLayout.contentHeight);
 }
 
+-(void)layoutViewWillChange:(VSHorizontalLayout *)HorizontalLayout{
+}
+
 @end

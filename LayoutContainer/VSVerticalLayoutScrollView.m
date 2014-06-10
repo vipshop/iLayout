@@ -48,4 +48,8 @@
     self.contentSize = CGSizeMake(self.contentSize.width, verticalLayout.contentHeight);
 }
 
+- (void)layoutViewWillChange:(VSVerticalLayout *)verticalLayout{
+    
+}
+
 @end

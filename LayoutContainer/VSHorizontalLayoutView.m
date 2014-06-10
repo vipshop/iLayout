@@ -47,4 +47,8 @@
 -(void)layoutViewDidChange:(VSHorizontalLayout*)HorizontalLayout {
 }
 
+-(void)layoutViewWillChange:(VSHorizontalLayout *)HorizontalLayout{
+    
+}
+
 @end

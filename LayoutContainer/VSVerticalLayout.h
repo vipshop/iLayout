@@ -9,7 +9,10 @@
 
 @protocol VSVerticalLayoutDelegate<NSObject>
 
+@optional
 -(void)layoutViewDidChange:(VSVerticalLayout*)verticalLayout;
+
+- (void)layoutViewWillChange:(VSVerticalLayout *)verticalLayout;
 
 @end
 
