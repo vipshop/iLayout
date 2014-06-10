@@ -18,7 +18,6 @@
 		2679A8D73215F19B04626352 /* VSVerticalLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2679A2BDB1451DD69B525AE8 /* VSVerticalLayoutView.m */; };
 		2679A90FDF680FA4A2062281 /* VSHorizontalLayoutScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2679A16667FAF8CDE6035AF5 /* VSHorizontalLayoutScrollView.m */; };
 		2679A96ECC71B5446ADDB27B /* VSGridLayoutScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2679A3DC8F4BF96B126088C8 /* VSGridLayoutScrollView.m */; };
-		2679AB60D7854D159532BF1F /* VSHorizontalLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2679A77F950E00B9C0FA1347 /* VSHorizontalLayout.m */; };
 		2679ABC8F08AB39BF3C6FEAB /* VSVerticalLayoutScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2679A39ADC522FBAD83F7C98 /* VSVerticalLayoutScrollView.m */; };
 		2679AC20D5763FFE49D4A74C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2679AEDDA01FA908B324C87B /* README.md */; };
 		2679AC27840A3765C2E445CA /* VSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2679A75F354645C1EC1EEF70 /* VSMainViewController.m */; };
@@ -30,6 +29,7 @@
 		2679AE1D8BCD10E7D3A160B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2679A0BE5946F9D197C49B3B /* Images.xcassets */; };
 		2679AE9D41EBDD28203E19A6 /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2679A96510E80503B40901BC /* UIView+Layout.m */; };
 		2679AF14326ABE8A75666C3F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2679AB26604AB30C79092ABA /* InfoPlist.strings */; };
+		287E1D8F1946BA400033705B /* VSHorizontalLayout.mm in Sources */ = {isa = PBXBuildFile; fileRef = 287E1D8E1946BA400033705B /* VSHorizontalLayout.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +60,6 @@
 		2679A5839EA95F7D37FC5A56 /* VSGridLayoutScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSGridLayoutScrollView.h; sourceTree = "<group>"; };
 		2679A633C58B302112916647 /* VSHorizontalLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSHorizontalLayoutView.h; sourceTree = "<group>"; };
 		2679A75F354645C1EC1EEF70 /* VSMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSMainViewController.m; sourceTree = "<group>"; };
-		2679A77F950E00B9C0FA1347 /* VSHorizontalLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSHorizontalLayout.m; sourceTree = "<group>"; };
 		2679A7A2B3088851A8BBF299 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2679A7EB6B435B5AED22B1E9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2679A927BDE8691D4E4FC557 /* LayoutContainer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LayoutContainer-Prefix.pch"; sourceTree = "<group>"; };
@@ -80,6 +79,7 @@
 		2679AEF1BC8618975E292BB2 /* VSVerticalLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSVerticalLayoutView.h; sourceTree = "<group>"; };
 		2679AF57BE5F6007EECA0E40 /* VSVerticalLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSVerticalLayout.h; sourceTree = "<group>"; };
 		2679AFABDDC8C256577670F6 /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
+		287E1D8E1946BA400033705B /* VSHorizontalLayout.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VSHorizontalLayout.mm; sourceTree = "<group>"; };
 		CA9E0B5E192348D900AD825A /* VSLayoutContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSLayoutContainer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,8 +130,8 @@
 				2679AEF1BC8618975E292BB2 /* VSVerticalLayoutView.h */,
 				2679A57214FA55A8D64E6405 /* VSVerticalLayout.mm */,
 				2679AF57BE5F6007EECA0E40 /* VSVerticalLayout.h */,
-				2679A77F950E00B9C0FA1347 /* VSHorizontalLayout.m */,
 				2679ADC2E485A151062EF586 /* VSHorizontalLayout.h */,
+				287E1D8E1946BA400033705B /* VSHorizontalLayout.mm */,
 				2679ACF3EB85667D41D061CE /* VSHorizontalLayoutView.m */,
 				2679A633C58B302112916647 /* VSHorizontalLayoutView.h */,
 				2679A16667FAF8CDE6035AF5 /* VSHorizontalLayoutScrollView.m */,
@@ -311,7 +311,7 @@
 				2679ABC8F08AB39BF3C6FEAB /* VSVerticalLayoutScrollView.m in Sources */,
 				2679A8D73215F19B04626352 /* VSVerticalLayoutView.m in Sources */,
 				2679AD9BF0E8F57D35B64C15 /* VSVerticalLayout.mm in Sources */,
-				2679AB60D7854D159532BF1F /* VSHorizontalLayout.m in Sources */,
+				287E1D8F1946BA400033705B /* VSHorizontalLayout.mm in Sources */,
 				2679AD50FDC98073034F18B4 /* VSHorizontalLayoutView.m in Sources */,
 				2679A90FDF680FA4A2062281 /* VSHorizontalLayoutScrollView.m in Sources */,
 				2679AE9D41EBDD28203E19A6 /* UIView+Layout.m in Sources */,
