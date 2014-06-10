@@ -5,7 +5,23 @@
 
 #import <Foundation/Foundation.h>
 
+@class VSHorizontalLayout;
 
-//TODO:参照VSVerticalLayout
+@protocol VSHorizontalLayoutDelegate<NSObject>
+
+-(void)layoutViewDidChange:(VSHorizontalLayout*)HorizontalLayout;
+
+@end
+
 @interface VSHorizontalLayout : NSObject
+
+@property (nonatomic, assign) id<VSHorizontalLayoutDelegate> delegate;
+@property (nonatomic, readonly) CGFloat contentHeight;
+
+- (void)addSubviewForLayout:(UIView *)subview;
+
+- (void)removeSubviewForLayout:(UIView*)subview;
+
+- (void)updateLayout;
+
 @end
