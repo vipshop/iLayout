@@ -11,7 +11,7 @@
 
 @interface VSAppDelegate()
 
-@property (nonatomic, retain) VSMainViewController* viewController;
+@property (nonatomic, retain) UINavigationController* viewController;
 
 @end
 
@@ -19,7 +19,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-    self.viewController = [[[VSMainViewController alloc] init] autorelease];
+    UINavigationController *nav=[[UINavigationController alloc] initWithRootViewController:[[[VSMainViewController alloc] init] autorelease]];
+    self.viewController = nav;
+    [nav release];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;

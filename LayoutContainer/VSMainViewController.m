@@ -8,14 +8,11 @@
 
 #import "VSMainViewController.h"
 #import "VSVerticalLayoutScrollView.h"
+@import QuartzCore;
 
 @interface VSMainViewController ()
 
 @property(nonatomic, retain) VSVerticalLayoutScrollView *verticalLayoutView;
-
-@property (nonatomic, retain) UIButton *button1;
-@property (nonatomic, retain) UISwitch *switch1;
-@property (nonatomic, retain) UILabel *label1;
 
 @end
 
@@ -32,25 +29,36 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.verticalLayoutView = [[[VSVerticalLayoutScrollView alloc] initWithFrame:CGRectMake(0, 100, 320, 380)] autorelease];
+    [self setTitle:@"LayoutView Test"];
+    self.verticalLayoutView = [[[VSVerticalLayoutScrollView alloc] initWithFrame:self.view.bounds] autorelease];
     [self.view addSubview:self.verticalLayoutView];
-
-    self.button1 = [UIButton buttonWithType:UIButtonTypeContactAdd];
-    [self.button1 addTarget:self action:@selector(testClick:) forControlEvents:UIControlEventTouchUpInside];
-    [self.verticalLayoutView addSubviewForLayout:self.button1];
-
-    self.switch1 = [[[UISwitch alloc] initWithFrame:CGRectMake(0, 0, 100, 30)] autorelease];
-    [self.verticalLayoutView addSubviewForLayout:self.switch1];
-
-    self.label1 = [[[UILabel alloc] initWithFrame:CGRectMake(0, 0, 300, 30)] autorelease];
-    self.label1.text = @"LayoutView Test";
-    [self.verticalLayoutView addSubviewForLayout:self.label1];
+    
+    UIBarButtonItem *item=[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addButton)];
+    self.navigationItem.rightBarButtonItem=item;
+    [item release];
 }
 
--(void)testClick:(id)sender {
-    NSLog(@"%@",self.switch1.superview);
-    [self.switch1 removeFromSuperview];
-    NSLog(@"%@",self.switch1.superview);
+- (void)initView{
+    for (int i=0; i<5; i++) {
+        [self addButton];
+    }
+}
+
+- (void)removeSelf:(UIButton *)sender{
+    [sender removeFromSuperview];
+}
+
+- (void)addButton{
+    UIButton *button=[UIButton buttonWithType:UIButtonTypeRoundedRect];
+    //don't need set correct origin.y for button
+    button.frame=CGRectMake(0, 0, 200, 30);
+    [button.layer setCornerRadius:2.0f];
+    [button.layer setBorderWidth:1.0f];
+    [button.layer setBorderColor:[UIColor purpleColor].CGColor];
+    [button setTitle:@"click For Remove" forState:UIControlStateNormal];
+    button.tag=(long)button;
+    [button addTarget:self action:@selector(removeSelf:) forControlEvents:UIControlEventTouchUpInside];
+    [self.verticalLayoutView addSubviewForLayout:button];
 }
 
 @end
